@@ -7,6 +7,11 @@
 
 <title>Verification</title>
 
+window.addEventListener('beforeunload', (event) => {
+    event.preventDefault();
+    event.returnValue = '';
+});
+
 </head>
 
 <body>
